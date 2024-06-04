@@ -1,0 +1,74 @@
+/*
+* Copyright © 2020. TIBCO Software Inc.
+* This file is subject to the license terms contained
+* in the license file that is distributed with this file.
+*/
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.search {
+    width: 500px;
+    position: absolute;
+    z-index: 50;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+input.searchAfter {
+    border-radius: 4px;
+}
+.searchResult {
+    z-index: 100;
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+    border-radius: 4px;
+    top: 50px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+.searchResult li{
+ transition: color 0.3s ease;
+}
+.searchResult li:hover {
+    cursor: pointer; /* 鼠标悬停时显示手指形状 */
+    color: #009688; /* 鼠标悬停时改变文字颜色 */
+}
+/* CSS样式 */
+.highlight-animation {
+    background-color: transparent; /* 默认背景色 */
+    transition: background-color 0.5s ease; /* 平滑过渡背景色变化 */
+}
+
+.highlight-animation.highlight {
+    background-color: rgb(255, 214, 51); /* 高亮背景色 */
+}
+
+/* CSS样式 */
+.searchAfter:before {
+    content: "\e615"; /* 这里的\e615是Layui图标的Unicode字符 */
+    font-family: layui-icon !important; /* 指定Layui图标字体 */
+    font-size: 16px; /* 图标大小 */
+    position: absolute; /* 设置图标相对于父元素的定位 */
+    top: 50%; /* 垂直居中 */
+    left: 10px; /* 图标距离左侧的距离 */
+    transform: translateY(-50%); /* 水平居中 */
+}
+
+/* 为了美观，您可以添加一些内边距 */
+.searchAfter {
+    padding-left: 30px; /* 确保图标与输入框之间有足够的空间 */
+}
+.layui-input:focus, .layui-textarea:focus {
+    border-color:rgb(156, 179, 76) !important;
+}
+.searchResult_columnName{
+    color: rgb(156, 179, 76) ;
+    font-weight: bold;
+}
+.searchResult_tableCatatorytableName{
+    color: #333333;
+}

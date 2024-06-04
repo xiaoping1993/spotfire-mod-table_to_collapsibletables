@@ -1,0 +1,38 @@
+{
+    "apiVersion": "1.2",
+    "version": "1.0",
+    "name": "table_to_collapsibletables",
+    "id": "table_to_collapsibletables",
+    "icon": "icon.svg",
+    "properties": [
+        {
+            "name": "myProperty",
+            "type": "string",
+            "defaultValue": "{\"foldUnFold\":\"false-noChange\",\"selectAll\":\"false\",\"showCategoryList\":[],\"showCategoryStatue\":false,\"goToYName\":\"患者人口学信息\",\"configName\":\"defaultConfigName\",\"configComment\":\"defaultConfigComment\",\"saveStatue\":\"false\",\"useConfig\":\"false\",\"useLastConfig\":\"false\",\"tablesConfigJson\":{}}"
+        }
+    ],
+    "dataViewDefinition": {
+        "axes": [
+            {
+                "name": "categories",
+                "mode": "categorical",
+                "placement": "bottom"
+            },
+            {
+                "name": "columns",
+                "mode": "categorical",
+                "placement": "left"
+            }
+        ]
+    },
+    "files": [
+        "index.html",
+        "main.css",
+        "main.js",
+        "layui/css/layui.css",
+        "layui/layui.js",
+        "layui/font/iconfont.eot",
+        "layui/font/iconfont.svg",
+        "jquery-3.6.0.min.js"
+    ]
+}
